@@ -1,0 +1,44 @@
+
+<br><br><br>
+
+<br><br><br>
+<div class="container-fluid">
+
+  <div class="card" style="width: 50%;margin: 5px auto;">
+    <div class="card-header">
+      Ajouter promorion
+    </div>
+    <div class="card-body">
+      <form>
+        <!--<div class="form-group">
+          <label>Name</label>
+          <input [(ngModel)]="promorion.status" id="name" name="name" class="form-control" type="text">
+        </div>-->
+
+        <div class="form-group">
+          <label >DateDebut</label>
+          <input [(ngModel)]="promorion.dateDebut" id="description" name="description" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label >DateFin</label>
+          <input [(ngModel)]="promorion.dateFin" name="image" id="image" class="form-control" type="text">
+        </div>
+
+
+        <div class="form-group">
+          <label >Select Annonce</label> <br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Annonce</option>
+            <option value="{{a.idAnnonce}}" *ngFor="let a of annonces ">{{a.name}}</option>
+          </select>
+
+        </div>
+
+
+        <button class="btn btn-primary" (click)="save()">Lancer demande</button>
+      </form>
+    </div>
+  </div>
+</div>
+

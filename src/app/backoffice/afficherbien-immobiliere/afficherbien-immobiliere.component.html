@@ -1,0 +1,49 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="d-xl-flex justify-content-between align-items-start">
+  <h2 class="text-dark font-weight-bold mb-2">&nbsp;&nbsp; Advertisements dashboard </h2>
+
+  <div class="col-md-16 bg-light ">
+    <button type="button" onclick="location.href='http://localhost:4200/admin/ajouterbienimmo'" class="btn btn-primary " >Create New AD</button>
+  </div><br>
+</div>
+<br>
+<br>
+
+  <table class="table">
+  <thead>
+  <tr class="">
+
+    <th>Statut</th>
+    <th>Etat</th>
+    <th>Localisation</th>
+    <th>Description</th>
+    <th>Prix</th>
+    <th>Superficie</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of bienimmos">
+
+    <td>  {{a.statut}}</td>
+    <td>{{a.etat}}</td>
+    <td>{{a.localisation}}</td>
+    <td>{{a.description}}</td>
+    <td>{{a.superficie}}</td>
+    <td>{{a.prix}}</td>
+
+    <a [routerLink]="['/admin/supprimerbienimmo/',a.idBienimmo]">delete</a>&nbsp;
+    <a [routerLink]="['/admin/modifierbienimmo/',a.idBienimmo]">update</a>
+  </tr>
+  </tbody>
+</table>
+<br>
+<br><br>
+<br><br>
+<br>
+

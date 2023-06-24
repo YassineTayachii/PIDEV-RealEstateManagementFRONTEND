@@ -1,7 +1,8 @@
-export class Annonce {
+export class Promotion {
 
-    idAnnonce!: string;
-    name!: string;
-    description!: string;
-    image!: string;
+  idPromo!: string;
+  status!: string;
+  dateDebut!: Date;
+  dateFin!: Date;
+
 }

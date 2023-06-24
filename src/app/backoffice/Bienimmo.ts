@@ -1,7 +1,10 @@
-export class Annonce {
+export class Bienimmo {
 
-    idAnnonce!: string;
-    name!: string;
-    description!: string;
-    image!: string;
+    idBienimmo!: number;
+    statut!: string;
+  etat!: string;
+  localisation!: string;
+  description!: string;
+  prix!: number;
+  superficie!: number;
 }

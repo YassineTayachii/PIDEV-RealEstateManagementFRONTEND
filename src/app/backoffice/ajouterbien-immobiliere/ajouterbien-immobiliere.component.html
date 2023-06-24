@@ -1,0 +1,76 @@
+<!--<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>ajouter-BienIMMOs </p>
+<br>
+<br>
+<form #f="ngForm">
+  &lt;!&ndash;  <label > id </label>
+    <input type="number" name="id" ngModel ><br>&ndash;&gt;
+
+  <label > Statut</label>
+  <input type="text" name="name" ngModel [(ngModel)]="bienimmo.statut"><br>
+  <label>Etat</label>
+  <input type="text" name="image" [(ngModel)]="bienimmo.etat" >
+  <label>Localisation</label>
+  <input type="text" name="image" [(ngModel)]="bienimmo.localisation" >
+
+  <label> Description</label>
+  <input type="text" name="description" [(ngModel)]="bienimmo.description"><br>
+  <label>Prix</label>
+  <input type="text" name="image" [(ngModel)]="bienimmo.prix" >
+
+  <label>Superficie</label>
+  <input type="text" name="image" [(ngModel)]="bienimmo.superficie" >
+
+  <input type="submit" value="save" (click)="save()" >
+
+
+</form>-->
+
+
+<div class="container-fluid">
+
+  <div class="card" style="width: 50%;margin: 5px auto;">
+    <div class="card-header">
+      Edit Bien Immo
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label>statut</label>
+          <input [(ngModel)]="bienimmo.statut" id="status" name="statut" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label >Etat</label>
+          <input [(ngModel)]="bienimmo.etat" name="etat" id="etat" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Localisation</label>
+          <input [(ngModel)]="bienimmo.localisation" name="localisation" id="localisation" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Description</label>
+          <input [(ngModel)]="bienimmo.description" name="description" id="description" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Prix</label>
+          <input [(ngModel)]="bienimmo.prix" name="prix" id="prix" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+          <label >Superficie</label>
+          <input [(ngModel)]="bienimmo.superficie" name="superficie" id="superficie" class="form-control" type="number">
+        </div>
+
+        <button class="btn btn-primary" (click)="save()">Ajouter</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+

@@ -1,0 +1,49 @@
+<br><br><br>
+<div class="container-fluid">
+
+  <div class="card" style="width: 50%;margin: 5px auto;">
+    <div class="card-header">
+      Edit Bien Immo
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label>Statut</label>
+          <input [(ngModel)]="bienimmo.statut" id="statut" name="statut" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label >Etat</label>
+          <input [(ngModel)]="bienimmo.etat" name="etat" id="etat" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Localisation</label>
+          <input [(ngModel)]="bienimmo.localisation" name="localisation" id="localisation" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Description</label>
+          <input [(ngModel)]="bienimmo.description" name="description" id="description" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Prix</label>
+          <input [(ngModel)]="bienimmo.prix" name="prix" id="prix" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label >Superficie</label>
+          <input [(ngModel)]="bienimmo.superficie" name="superficie" id="superficie" class="form-control" type="text">
+        </div>
+
+        <button class="btn btn-primary" (click)="updateBienimmo()">Update</button>
+      </form>
+    </div>
+    <div class="card-footer" *ngIf="showAlert">
+      <div class="alert alert-success">
+        <button (click)="closeAlert()" class="close">
+          &times;
+        </button>
+        <strong>Success</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
